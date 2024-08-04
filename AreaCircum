@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class AreaCircum
+{
+
+    public static void main(String[] args){
+
+    float radius;
+    double area,circum;
+        System.out.print("Enter Radius:");
+
+        Scanner user_input = new Scanner(System.in);
+        radius = user_input.nextFloat();
+    area = 3.14 * radius * radius;
+    circum = 3.14 * 2 * radius;
+        System.out.print("\n\nArea of circle is: " + area);
+        System.out.print("\n\nCircumference of circle is: " + circum);
+    }
+}
