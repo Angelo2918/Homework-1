@@ -1,0 +1,41 @@
+import java.sql.SQLOutput;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Mai2 {
+public static void main(String[] args){
+
+//    System.out.println(Arrays.toString(args));
+//
+//    System.out.println("Age: " + args[0]);
+//    System.out.println("Name: " + args[1]);
+//    System.out.println("Color: " + args[2]);
+
+    Scanner inputScanner = new Scanner(System.in);
+
+    System.out.println("Insert your name: ");
+    String userName = inputScanner.nextLine();
+    System.out.println("My name is: " + userName);
+
+    System.out.println("Insert your age: ");
+    String userAge = inputScanner.nextLine();
+    System.out.println("My age is: "+ userAge);
+
+    System.out.println("Insert your favoriter color: ");
+    String userColor = inputScanner.nextLine();
+    System.out.println("Your favorite color is: " + userColor);
+
+    System.out.println("Insert one number: ");
+    int firstNumber = inputScanner.nextInt();
+
+    System.out.println("Insert the second number: ");
+    int secondNumber = inputScanner.nextInt();
+
+    System.out.println("Insert third number: ");
+    int thirdNumber = inputScanner.nextInt();
+    int result = firstNumber + secondNumber + thirdNumber;
+    System.out.println("The sum of the three number`s is: " + result);
+
+    inputScanner.close();
+}
+}
